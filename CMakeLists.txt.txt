@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.10)
+project(Breakout)
+
+set(CMAKE_CXX_STANDARD 17)
+
+# Add GLFW
+add_subdirectory(dependencies/glfw)
+include_directories(dependencies/glfw/include)
+
+# Add GLAD
+add_subdirectory(dependencies/glad)
+include_directories(dependencies/glad/include)
+
+# Add GLM
+find_package(glm REQUIRED)
+include_directories(${GLM_INCLUDE_DIRS})
+
+# Add source files
+file(GLOB SOURCES src/*.cpp)
+
+add_executable(Breakout ${SOURCES})
+
+# Link libraries
+target_link_libraries(Breakout glfw glad ${GLM_LIBRARIES})
