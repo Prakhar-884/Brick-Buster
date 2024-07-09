@@ -1,7 +1,7 @@
 # Brick-Buster
 # Breakout Game in C++ with OpenGL
 
-![Gameplay Screenshot](screenshot.png)
+![Gameplay Screenshot](game screenshot.png)
 
 ## Description
 This project is an implementation of the classic Breakout arcade game using C++ and OpenGL. It features paddle-ball mechanics, brick destruction, collision detection, and basic game physics. Developed as a learning exercise in object-oriented programming and OpenGL integration.
